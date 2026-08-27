@@ -1,0 +1,28 @@
+{
+    "report_information": {
+        "generated_on": "2026-08-27 12:22:40",
+        "file_name": "photo.jpg",
+        "file_type": "image",
+        "file_size": "0.46 MB"
+    },
+    "analysis": {
+        "File Information": {
+            "File Name": "photo.jpg",
+            "File Size": "469.04 KB",
+            "File Format": "JPEG",
+            "Extension": ".jpg"
+        },
+        "Image Information": {
+            "Width": "1055 pixels",
+            "Height": "1569 pixels",
+            "Resolution": "Not available",
+            "Color Mode": "RGB"
+        },
+        "EXIF Metadata": {
+            "Camera": "Not available",
+            "Date Taken": "Not available",
+            "Orientation": "Not available"
+        },
+        "Other Metadata": {}
+    }
+}
