@@ -5,20 +5,16 @@ import sys
 
 def format_file_size(size):
     """Convert bytes into KB/MB."""
-
     if size < 1024:
         return f"{size} Bytes"
-
     elif size < 1024 * 1024:
         return f"{size / 1024:.2f} KB"
-
     else:
         return f"{size / (1024 * 1024):.2f} MB"
 
 
 def get_exif_data(image):
     """Extract EXIF metadata from the image."""
-
     exif_data = {}
 
     try:
@@ -65,16 +61,16 @@ def analyze_image(image_path):
         }
 
     try:
-
+        # Open image
         image = Image.open(image_path)
 
+        # File information
         file_name = os.path.basename(image_path)
         file_size = os.path.getsize(image_path)
 
+        # Image information
         file_format = image.format
-
         width, height = image.size
-
         color_mode = image.mode
 
         # Resolution
@@ -106,7 +102,6 @@ def analyze_image(image_path):
 
         # Create result dictionary
         result = {
-
             "File Information": {
                 "File Name": file_name,
                 "File Size": format_file_size(file_size),
@@ -155,7 +150,6 @@ def analyze_image(image_path):
         return result
 
     except Exception as e:
-
         return {
             "error": f"Error reading image: {e}"
         }
