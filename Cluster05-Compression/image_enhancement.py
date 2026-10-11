@@ -16,7 +16,7 @@ os.makedirs("output", exist_ok=True)
 # 2. Read the input image
 # --------------------------------------------------
 
-input_path = "datasets/photo.jpg"
+input_path = "photo.jpg"
 
 image = cv2.imread(input_path)
 
